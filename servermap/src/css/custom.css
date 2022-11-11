@@ -1,0 +1,52 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --blue-50: #e5f2fb;
+  --blue-100: #bfdff7;
+  --blue-200: #98ccf2;
+  --blue-300: #74b8eb;
+  --blue-400: #5aa8e8;
+  --blue-500: #469ae4;
+  --blue-600: #3f8cd7;
+  --blue-700: #367bc4;
+  --blue-800: #306ab2;
+  --blue-900: #244d92;
+
+  --ifm-color-primary: var(--blue-500);
+  --ifm-color-primary-dark: var(--blue-600);
+  --ifm-color-primary-darker: var(--blue-700);
+  --ifm-color-primary-darkest: var(--blue-800);
+  --ifm-color-primary-light: var(--blue-400);
+  --ifm-color-primary-lighter: var(--blue-300);
+  --ifm-color-primary-lightest: var(--blue-200);
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --blue-50: #244d92;
+  --blue-100: #306ab2;
+  --blue-200: #367bc4;
+  --blue-300: #3f8cd7;
+  --blue-400: #469ae4;
+  --blue-500: #5aa8e8;
+  --blue-600: #74b8eb;
+  --blue-700: #98ccf2;
+  --blue-800: #bfdff7;
+  --blue-900: #e5f2fb;
+
+  --ifm-color-primary: var(--blue-500);
+  --ifm-color-primary-dark: var(--blue-600);
+  --ifm-color-primary-darker: var(--blue-700);
+  --ifm-color-primary-darkest: var(--blue-800);
+  --ifm-color-primary-light: var(--blue-400);
+  --ifm-color-primary-lighter: var(--blue-300);
+  --ifm-color-primary-lightest: var(--blue-200);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}

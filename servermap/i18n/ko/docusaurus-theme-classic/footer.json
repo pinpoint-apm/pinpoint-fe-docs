@@ -1,0 +1,38 @@
+{
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Demo": {
+    "message": "Demo",
+    "description": "The title of the footer links column with title=Demo in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
+  },
+  "link.item.label.Demos": {
+    "message": "Demos",
+    "description": "The label of footer link with label=Demos linking to https://stackoverflow.com/questions/tagged/docusaurus"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/pinpoint-apm/pinpoint/blob/frontend-v3/web/src/main/web-frontend/.gitignore"
+  },
+  "link.item.label.Issues": {
+    "message": "Issues",
+    "description": "The label of footer link with label=Issues linking to https://github.com/pinpoint-apm/pinpoint/issues"
+  },
+  "link.item.label.Naver Open Source": {
+    "message": "Naver Open Source",
+    "description": "The label of footer link with label=Naver Open Source linking to https://naver.github.io/"
+  },
+  "copyright": {
+    "message": "Copyright © 2022 NAVER, Inc. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

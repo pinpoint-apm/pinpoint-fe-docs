@@ -1,0 +1,42 @@
+import react from 'react';
+import Basic from '@site/src/components/Examples/Basic';
+import RenderEdgeLabel from '@site/src/components/Examples/RenderEdgeLabel';
+
+# Basic
+
+<Basic />
+
+```typescript title=Basic
+<ServerMap
+  data={data}
+  baseNodeId={'ACL-PORTAL-DEV^SPRING_BOOT'}
+/>
+```
+
+<br />
+
+# Render Node & Edge Label
+
+<RenderEdgeLabel />
+
+```typescript title='Render Node & Edge Label'
+const renderNodeLabel = (node: MergedNode) => {
+  if (node.nodes?.length > 0) {
+    return 'This Node is Merged!'
+  } 
+}
+  
+const renderEdgeLabel = (edge: MergedEdge) => {
+  if (edge.edges?.length > 0) {
+    return 'This Edge is Merged!';
+  } 
+  return 'This Edge is not merged';
+}
+
+<ServerMap
+  data={getServerMapData()}
+  baseNodeId={'ACL-PORTAL-DEV^SPRING_BOOT'}
+  renderNodeLabel={renderNodeLabel}
+  renderEdgeLabel={renderEdgeLabel}
+/>
+```
