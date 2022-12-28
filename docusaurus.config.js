@@ -6,19 +6,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '@pinpoint-fe/server-map',
+  title: 'ppjs',
   tagline:
-    'Open-source network-map library, specifically for application topology, written in React.js',
-  url: 'https://pinpoint-apm.github.io/',
-  baseUrl: '/pinpoint-fe-docs/',
+    'Open-source Javascript library',
+  url: 'https://billionairedy.github.io/',
+  baseUrl: '/ppjs/docs',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/server-map-logo.svg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  projectName: 'pinpoint-fe-docs',
-  organizationName: 'pinpoint-apm',
+  projectName: 'ppjs',
+  organizationName: 'BillionaireDY',
   trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -35,7 +35,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'docs',
+          routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
+          lastVersion: 'current',
+          onlyIncludeVersions: ['current'],
+          // sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -53,23 +58,59 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'servermap',
+        path: 'servermap',
+        routeBasePath: 'servermap',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'scatterchart',
+        path: 'scatterchart',
+        routeBasePath: 'scatterchart',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: '@pinpoint-fe/server-map',
+        title: 'ppjs',
         logo: {
           alt: 'pinpoint logo',
           src: 'img/server-map-logo.svg',
         },
         items: [
+          // {
+          //   type: 'doc',
+          //   docId: 'introduction',
+          //   position: 'left',
+          //   label: 'Docs',
+          // },
           {
-            type: 'doc',
-            docId: 'introduction',
+            // type: 'docSidebar',
+            // sidebarId: 'servermap',
+            to: '/servermap/introduction',
+            activeBaseRegex: `/servermap/`,
             position: 'left',
-            label: 'Docs',
+            label: 'SERVERMAP',
           },
-          { to: '/examples', label: 'Examples', position: 'left' },
+          {
+            // type: 'docSidebar',
+            // sidebarId: 'scatterchart',
+            to: '/scatterchart/introduction',
+            activeBaseRegex: `/scatterchart/`,
+            position: 'left',
+            label: 'SCATTERCHART',
+          },
           {
             type: 'localeDropdown',
             position: 'right',
