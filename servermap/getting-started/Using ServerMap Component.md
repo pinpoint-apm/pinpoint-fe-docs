@@ -20,7 +20,7 @@ export default function MyServerMapPage() {
 
 | Props | Type | Required | Description |
 | --- | --- | --- | --- |
-| data | <code>{ nodes: <a href="/docs/guide/node">Node</a>[], edges: <a href="/docs/guide/edge">Edge</a>[] }</code> | ✔️ | Data to render |
+| data | <code>{ nodes: <a href="/servermap/guide/node">Node</a>[], edges: <a href="/servermap/guide/edge">Edge</a>[] }</code> | ✔️ | Data to render |
 | baseNodeId | string | ✔️ | Central node id in the server-map              |
 | customTheme | ThemeType | | 	Custom style object  |
 | onClickNode       | `ClickEventHandler<MergedNode>`    |  | Callback to execute when clicking nodes   |

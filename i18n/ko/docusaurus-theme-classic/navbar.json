@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "@pinpoint-fe/server-map",
+    "message": "ppjs",
     "description": "The title in the navbar"
   },
   "item.label.Docs": {
@@ -10,5 +10,13 @@
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
+  },
+  "item.label.SERVERMAP": {
+    "message": "SERVERMAP",
+    "description": "Navbar item with label SERVERMAP"
+  },
+  "item.label.SCATTERCHART": {
+    "message": "SCATTERCHART",
+    "description": "Navbar item with label SCATTERCHART"
   }
 }
