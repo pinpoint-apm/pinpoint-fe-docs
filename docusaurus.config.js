@@ -109,7 +109,7 @@ const config = {
             to: '/scatterchart/introduction',
             activeBaseRegex: `/scatterchart/`,
             position: 'left',
-            label: 'SCATTERCHART',
+            label: 'SCATTER CHART',
           },
           {
             type: 'localeDropdown',
@@ -129,8 +129,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Docs',
-                to: 'docs/introduction',
+                label: 'SERVERMAP',
+                to: '/servermap/introduction',
+              },
+              {
+                label: 'SCHATTER CHART',
+                to: '/scatterchart/introduction',
               },
             ],
           },
@@ -138,8 +142,8 @@ const config = {
             title: 'Demo',
             items: [
               {
-                label: 'Examples',
-                href: '/examples',
+                label: 'SERVERMAP',
+                href: '/servermap/examples',
               },
             ],
           },
