@@ -2,12 +2,12 @@
 sidebar_position: 2
 ---
 
-# Method
+# API
 
 ## `render`
 
 ### Description
-Render data on the chart. You can determine whether to redraw the chart or append data to the exisiting chart with `append` property.
+데이터를 전달해 차트를 그리는 메서드입니다. 옵션 파라미터의 `append` 프로퍼티를 통해 전체를 다시 그리거나, 기존 차트 위에 그릴 수 있습니다.
 
 ### Interface
 ```typescript
@@ -32,10 +32,10 @@ SC.render(data, { append: true });
 ## `on`
 
 ### Description
-Bind events and handler. We provide `click` | `dragEnd` events.
+이벤트 바인딩을 하는 메서드입니다. `click` | `dragEnd` 이벤트를 제공합니다.
 
 ### `click`
-Occurs when clicking in the chart area.
+차트 영역에서 클릭했을 때 발생합니다.
 
 #### Interface
 ```typescript
@@ -50,7 +50,7 @@ SC.on('click', (event, { x, y }) => {
 ```
 
 ### `dragEnd`
-Occurs when dragging in the chart area.
+차트 영역에서 드래그를 했을 때 발생합니다.
 
 #### Interface
 ```typescript
@@ -68,7 +68,7 @@ SC.on('dragEnd', (event, { x1, y1, x2, y2 }) => {
 ## `off`
 
 ### Description
-Remove the event listener you added.
+추가한 이벤트 리스너를 제거합니다.
 
 ### Interface
 ```typescript

@@ -5,6 +5,12 @@ import { Image } from '@site/src/components/Image';
 
 # Introduction
 
+<div style={{width: '75%'}}>
+  <Image src={(colorCode) => {
+    return colorCode === 'dark'  ? '/img/scatter-chart-dark.png' : '/img/scatter-chart.png'
+  }} />
+</div>
+
 ## What is ScatterChart component?
 
 - An open-source scatter-chart library written in pure JS based on canvas api

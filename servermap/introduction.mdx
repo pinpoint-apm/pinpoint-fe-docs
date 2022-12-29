@@ -5,14 +5,13 @@ import { Image } from '@site/src/components/Image';
 
 # Introduction
 
+<div style={{width: '75%'}}>
+  <Image src={(colorCode) => {
+    return colorCode === 'dark'  ? '/img/servermap-with-label-dark.png' : '/img/servermap-with-label.png'
+  }} />
+</div>
+
 ## What is ServerMap component?
-
-<br />
-<Image src={(colorCode) => {
-  return colorCode === 'dark'  ? '/img/servermap-with-label-dark.png' : '/img/servermap-with-label.png'
-}} />
-
-
 - ServerMap component is an open-source network-map library, specifically for application topology.
 - With ServerMap component, you will find it easy to understand how your services are interconnected and how the transactions are going on between them.
 - Besides, since we provide a various of cool features such as merge and customizing label, feel free to check out them if you are interested in making your topology look nicer.

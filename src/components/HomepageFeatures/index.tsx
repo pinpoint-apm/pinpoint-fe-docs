@@ -18,6 +18,7 @@ const getFeatureList = (colorMode: string) => {
   },
   {
     title: 'Scatter Chart Component',
+    src: useBaseUrl(colorMode === 'dark' ? '/img/scatter-chart-dark.png' : '/img/scatter-chart.png'),
     description: (
       <>
         Open-source scatter-chart library, specifically designed for visualizing request and response patterns over time.
