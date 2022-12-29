@@ -7,9 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ppjs',
-  tagline:
-    'Pinpoint Front-end Components',
-  url: 'https://billionairedy.github.io/',
+  tagline: 'Pinpoint Front-end Components',
+  url: 'https://pinpoint-apm.github.io/',
   baseUrl: '/ppjs/docs',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -17,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  projectName: 'ppjs',
-  organizationName: 'BillionaireDY',
+  projectName: 'pinpoint-fe-docs',
+  organizationName: 'pinpoint-apm',
   trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -109,7 +108,7 @@ const config = {
             to: '/scatterchart/introduction',
             activeBaseRegex: `/scatterchart/`,
             position: 'left',
-            label: 'SCATTERCHART',
+            label: 'SCATTER CHART',
           },
           {
             type: 'localeDropdown',
@@ -129,8 +128,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Docs',
-                to: 'docs/introduction',
+                label: 'SERVERMAP',
+                to: '/servermap/introduction',
+              },
+              {
+                label: 'SCHATTER CHART',
+                to: '/scatterchart/introduction',
               },
             ],
           },
@@ -138,8 +141,8 @@ const config = {
             title: 'Demo',
             items: [
               {
-                label: 'Examples',
-                href: '/examples',
+                label: 'SERVERMAP',
+                href: '/servermap/examples',
               },
             ],
           },
