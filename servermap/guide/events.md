@@ -42,7 +42,7 @@ Callback to execute when clicking nodes.
 
 | Props | Type  | description  |
 | --- | --- | --- |
-| data | [MergedNode](/docs/guide/merge#mergednode) : `{ nodes?: Node[] } & Node` | Target node data |
+| data | [MergedNode](/servermap/guide/merge#mergednode) : `{ nodes?: Node[] } & Node` | Target node data |
 | eventType | "right" or "left" | Mouse click type |
 | position | cytoscape.Position :  `{ x: number, y: number }` | Coordinates where the event occurred  |
 
@@ -54,7 +54,7 @@ Callback to execute when clicking edges.
 
 | Props | Type  | description  |
 | --- | --- | --- |
-| data | [MergedEdge](/docs/guide/merge#mergededge) : `{ nodes?: Edge[] } & Edge` | Targe edge data |
+| data | [MergedEdge](/servermap/guide/merge#mergededge) : `{ nodes?: Edge[] } & Edge` | Targe edge data |
 | eventType | "right" or "left" | Mouse click type |
 | position | cytoscape.Position :  `{ x: number, y: number }` | Coordinates where the event occurred |
 

@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'ppjs',
   tagline:
-    'Open-source Javascript library',
+    'Pinpoint Front-end Components',
   url: 'https://billionairedy.github.io/',
   baseUrl: '/ppjs/docs',
   onBrokenLinks: 'throw',

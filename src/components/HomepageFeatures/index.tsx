@@ -12,18 +12,15 @@ const getFeatureList = (colorMode: string) => {
     src: useBaseUrl(colorMode === 'dark' ? '/img/servermap-with-label-dark.png' : '/img/servermap-with-label.png'),
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Open-source network-map library, specifically for application topology.
       </>
     ),
   },
   {
     title: 'Scatter Chart Component',
-    src: '',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Open-source scatter-chart library, specifically designed for visualizing request and response patterns over time.
       </>
     ),
   },
