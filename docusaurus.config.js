@@ -9,7 +9,7 @@ const config = {
   title: 'ppjs',
   tagline: 'Pinpoint Front-end Components',
   url: 'https://pinpoint-apm.github.io/',
-  baseUrl: '/ppjs/docs',
+  baseUrl: '/pinpoint-fe-docs',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/server-map-logo.svg',

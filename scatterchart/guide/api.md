@@ -77,6 +77,22 @@ off(eventType: string) => void;
 
 ### Usage
 ```typescript
-SC.off('click')
+SC.off('click');
 SC.off('dragEnd');
+```
+
+## `resize`
+
+### Description
+Reset width and height.
+
+### Interface
+```typescript
+resize(width?: number, height:? number) => void;
+```
+
+### Usage
+```typescript
+SC.resize();
+SC.resize(900, 450);
 ```
