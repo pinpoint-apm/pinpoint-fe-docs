@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ppjs',
+  title: 'pinpoint.js',
   tagline: 'Pinpoint Front-end Components',
   url: 'https://pinpoint-apm.github.io/',
   baseUrl: '/pinpoint-fe-docs',
@@ -82,7 +82,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'ppjs',
+        title: 'pinpoint.js',
         logo: {
           alt: 'pinpoint logo',
           src: 'img/server-map-logo.svg',
