@@ -96,3 +96,33 @@ resize(width?: number, height:? number) => void;
 SC.resize();
 SC.resize(900, 450);
 ```
+
+## `setAxisOption`
+
+### Description
+Reset axis of x, y
+
+### Interface
+```typescript
+setAxisOption({x?: Partial<AxisOption>, y?: Partial<AxisOption>}) => void;
+```
+
+### Usage
+```typescript
+SC.setAxisOption({x:{ min: Number(min), max: Number(max) }});
+```
+
+## `toBase64Image`
+
+### Description
+Convert canvas into `base64` data URL
+
+### Interface
+```typescript
+toBase64Image() => Promise<string>
+```
+
+### Usage
+```typescript
+const imageSrc = SC.toBase64Image();
+```

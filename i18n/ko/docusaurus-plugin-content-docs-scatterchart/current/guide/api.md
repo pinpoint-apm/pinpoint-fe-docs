@@ -96,3 +96,33 @@ resize(width?: number, height:? number) => void;
 SC.resize();
 SC.resize(900, 450);
 ```
+
+## `setAxisOption`
+
+### Description
+x, y axis를 재설정합니다.
+
+### Interface
+```typescript
+seAxisOption({x?: Partial<AxisOption>, y?: Partial<AxisOption>}) => void;
+```
+
+### Usage
+```typescript
+SC.setAxisOption({x:{ min: Number(min), max: Number(max) }});
+```
+
+## `toBase64Image`
+
+### Description
+Canvas 를 `base64` data URL 로 변환합니다.
+
+### Interface
+```typescript
+toBase64Image() => Promise<string>
+```
+
+### Usage
+```typescript
+const imageSrc = SC.toBase64Image();
+```
