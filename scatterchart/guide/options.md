@@ -8,7 +8,11 @@ sidebar_position: 1
 export interface ScatterChartOption {
   axis: {x: AxisOption, y: AxisOption};
   data: DataOption[];
+  background?: BackgroundOption;
+  grid?: GridOption;
+  guide?: GuideOption;
   legend?: LegendOption;
+  padding?: Padding;
   point?: PointOption;
 }
 ```
@@ -48,3 +52,31 @@ export interface ScatterChartOption {
 | Props | Type  | Required  | Default | Description |
 | --- | --- | --- | --- | --- |
 | radius | number |  | 3 | Radius of data circle |
+
+
+### `BackgroundOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| color | string(hex, rgb, rgba) |  | `white` | Color of background |
+
+
+### `GridOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| hidden | boolean |  | `false` | Hide grid when hidden is `true` |
+| strokeColor | string(hex, rgb, rgba) |  | `#d1d1d1` | Color of grid strokes |
+
+
+### `GuideOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| color | string(hex, rgb, rgba) |  | `white` | Color of guide text |
+| strokeColor | string(hex, rgb, rgba) |  | `black` | Color of guide storke |
+| backgroundColor | string(hex, rgb, rgba) |  | `black` |  Color of guide background |
+| drag | [DragOption](#dragoption) |  |  |  |
+
+#### `DragOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| strokeColor | string(hex, rgb, rgba) |  | `#469ae4` | Color of drag area storke |
+| backgroundColor | string(hex, rgb, rgba) |  | `rgba(225,225,225,0.4)` | Color of drag area background |

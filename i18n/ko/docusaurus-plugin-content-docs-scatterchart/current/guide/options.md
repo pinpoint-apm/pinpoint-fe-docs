@@ -8,7 +8,11 @@ sidebar_position: 1
 export interface ScatterChartOption {
   axis: {x: AxisOption, y: AxisOption};
   data: DataOption[];
+  background?: BackgroundOption;
+  grid?: GridOption;
+  guide?: GuideOption;
   legend?: LegendOption;
+  padding?: Padding;
   point?: PointOption;
 }
 ```
@@ -48,3 +52,31 @@ export interface ScatterChartOption {
 | Props | Type  | Required  | Default | Description |
 | --- | --- | --- | --- | --- |
 | radius | number |  | 3 | 데이터를 표현할 원의 반지름 |
+
+
+### `BackgroundOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| color | string(hex, rgb, rgba) |  | `white` | 배경색 |
+
+
+### `GridOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| hidden | boolean |  | `false` | `true` 일 경우 그리드를 숨김 |
+| strokeColor | string(hex, rgb, rgba) |  | `#d1d1d1` | 그리드 선의 색상 |
+
+
+### `GuideOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| color | string(hex, rgb, rgba) |  | `white` | 가이드 텍스트의 색상 |
+| strokeColor | string(hex, rgb, rgba) |  | `black` | 가이드라벨 선의 색상 |
+| backgroundColor | string(hex, rgb, rgba) |  | `black` |  가이드라벨의 배경색 |
+| drag | [DragOption](#dragoption) |  |  |  |
+
+#### `DragOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| strokeColor | string(hex, rgb, rgba) |  | `#469ae4` | 드래그 영역 둘레선 색상 |
+| backgroundColor | string(hex, rgb, rgba) |  | `rgba(225,225,225,0.4)` | 드래그 영역의 배경색 |
