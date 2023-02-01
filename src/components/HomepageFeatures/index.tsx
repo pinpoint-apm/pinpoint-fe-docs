@@ -9,6 +9,7 @@ const getFeatureList = (colorMode: string) => {
   return [
   {
     title: 'Servermap Component',
+    href: '/pinpoint-fe-docs/servermap/introduction',
     src: useBaseUrl(colorMode === 'dark' ? '/img/servermap-with-label-dark.png' : '/img/servermap-with-label.png'),
     description: (
       <>
@@ -18,6 +19,7 @@ const getFeatureList = (colorMode: string) => {
   },
   {
     title: 'Scatter Chart Component',
+    href: '/pinpoint-fe-docs/scatterchart/introduction',
     src: useBaseUrl(colorMode === 'dark' ? '/img/scatter-chart-dark.png' : '/img/scatter-chart.png'),
     description: (
       <>
@@ -27,9 +29,13 @@ const getFeatureList = (colorMode: string) => {
   },
 ]};
 
-function Feature({src, title, description}) {
+function Feature({src, title, href, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div 
+      className={clsx('col col--4')} 
+      onClick={() => location.href = href}
+      style={{cursor: 'pointer'}}
+    >
       <div className="text--center">
         <img src={src} />
       </div>

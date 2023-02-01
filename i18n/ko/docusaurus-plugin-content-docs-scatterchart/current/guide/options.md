@@ -30,7 +30,10 @@ export interface ScatterChartOption {
 | --- | --- | --- | --- | --- |
 | count | number |  | 5 | 표시할 각 축의 tick 개수 |
 | format | `(value: number) => string` |  |  | 표시할 tick의 형태 |
-
+| color | string |  | `black` | string(hex, rgb, rgba) |
+| strokeColor | string |  | black | string(hex, rgb, rgba) |
+| width | number |  | 5 | tick의 길이 |
+| font | string |  | default font | 폰트 |
 
 
 ### `DataOption`
