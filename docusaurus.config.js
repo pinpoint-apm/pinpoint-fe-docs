@@ -73,7 +73,7 @@ const config = {
         id: 'scatterchart',
         path: 'scatterchart',
         routeBasePath: 'scatterchart',
-        sidebarPath: require.resolve('./sidebars.js'),
+        sidebarPath: require.resolve('./scatterchart/sidebars.js'),
       },
     ],
   ],

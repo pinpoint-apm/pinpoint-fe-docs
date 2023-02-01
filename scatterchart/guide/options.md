@@ -30,6 +30,10 @@ export interface ScatterChartOption {
 | --- | --- | --- | --- | --- |
 | count | number |  | 5 | Number of ticks to display |
 | format | `(value: number) => string` |  |  | Display format for ticks |
+| color | string |  | `black` | string(hex, rgb, rgba) |
+| strokeColor | string |  | black | string(hex, rgb, rgba) |
+| width | number |  | 5 | width of tick |
+| font | string |  | default font | font of tick |
 
 
 
