@@ -19,9 +19,10 @@ export interface ScatterChartOption {
 ### `AxisOption`
 | Props | Type  | Required  | Default | Description |
 | --- | --- | --- | --- | --- |
-| min | number | ✔️ |  | Min value for each axis |
-| max | number | ✔️ |  | Max value for each axis |
+| min | number | ✔️ |  | Min value for the axis |
+| max | number | ✔️ |  | Max value for the axis |
 | padding | number |  |  | Sets the offset of the tick labels from the axis |
+| strokeColor | string |  |  | Set the color of the axis  |
 | tick | [TickOption](#tickoption) |  |  |  |
 
 
@@ -43,6 +44,8 @@ export interface ScatterChartOption {
 | type | string | ✔️ |  | Data type (will be used in legend) |
 | color | string |  |  | Color to use for this data type rendering |
 | priority | number |  | 99 | Determine the rendering priority if there is overlap. Lower number takes the higher priority |
+| radius | number |  | 3 | Radius of data point  |
+| opacity | number |  | 1 | Opacity of data point's color   |
 
 
 ### `LegendOption`
@@ -55,7 +58,8 @@ export interface ScatterChartOption {
 ### `PointOption`
 | Props | Type  | Required  | Default | Description |
 | --- | --- | --- | --- | --- |
-| radius | number |  | 3 | Radius of data circle |
+| radius | number |  | 3 | Radius of the data point |
+| opacity | number |  | 3 | Opacity of the data point |
 
 
 ### `BackgroundOption`
@@ -84,3 +88,11 @@ export interface ScatterChartOption {
 | --- | --- | --- | --- | --- |
 | strokeColor | string(hex, rgb, rgba) |  | `#469ae4` | Color of drag area storke |
 | backgroundColor | string(hex, rgb, rgba) |  | `rgba(225,225,225,0.4)` | Color of drag area background |
+
+### `PaddingOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| top | number |  | 15 |  |
+| bottom | number |  | 0 |  |
+| left | number |  | 0 |  |
+| right | number |  | 0 |  |
