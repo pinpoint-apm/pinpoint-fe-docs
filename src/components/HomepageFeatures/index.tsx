@@ -37,7 +37,11 @@ function Feature({src, title, href, description}) {
       style={{cursor: 'pointer'}}
     >
       <div className="text--center">
-        <img src={src} />
+        <div className={styles.imgContainer}>
+          <div className={styles.imgWrapper}>
+            <img className={styles.img} src={src} />
+          </div>
+        </div>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

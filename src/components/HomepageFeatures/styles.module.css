@@ -14,3 +14,21 @@
   align-items: center;
   justify-content: center;
 }
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+}
+
+.imgContainer:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.imgWrapper {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}

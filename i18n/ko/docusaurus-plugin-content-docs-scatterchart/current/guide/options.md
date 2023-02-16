@@ -87,3 +87,11 @@ export interface ScatterChartOption {
 | --- | --- | --- | --- | --- |
 | strokeColor | string(hex, rgb, rgba) |  | `#469ae4` | 드래그 영역 둘레선 색상 |
 | backgroundColor | string(hex, rgb, rgba) |  | `rgba(225,225,225,0.4)` | 드래그 영역의 배경색 |
+
+### `PaddingOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| top | number |  | 15 |  |
+| bottom | number |  | 0 |  |
+| left | number |  | 0 |  |
+| right | number |  | 0 |  |

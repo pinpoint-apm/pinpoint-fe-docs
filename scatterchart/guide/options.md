@@ -88,3 +88,11 @@ export interface ScatterChartOption {
 | --- | --- | --- | --- | --- |
 | strokeColor | string(hex, rgb, rgba) |  | `#469ae4` | Color of drag area storke |
 | backgroundColor | string(hex, rgb, rgba) |  | `rgba(225,225,225,0.4)` | Color of drag area background |
+
+### `PaddingOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| top | number |  | 15 |  |
+| bottom | number |  | 0 |  |
+| left | number |  | 0 |  |
+| right | number |  | 0 |  |
