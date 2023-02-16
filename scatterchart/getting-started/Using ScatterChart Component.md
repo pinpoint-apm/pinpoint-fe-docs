@@ -12,23 +12,27 @@ const SC = new ScatterChart(
       x: {
         min: 1669103462000,
         max: 1669103509335,
-        format: (value) => format(value, 'HH:mm:ss'),
+        tick: {
+          format: (value) => formatDate(value, 'HH:mm:ss'),
+        }
       },
       y: {
         min: 0,
         max: 10000,
-        format: (value) => value.toLocaleString(),
+        tick: {
+          format: (value) => value.toLocaleString(),
+        }
       }
     },
     data: [
       {
         type: 'success',
-        color: 'green',
+        color: 'rgba(61, 207, 168, 0.5)',
         priority: 1,
       },
       {
         type: 'fail',
-        color: 'red',
+        color: 'rgba(235, 71, 71, 0.5)',
         priority: 2,
       },
     ],

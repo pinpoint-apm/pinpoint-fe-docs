@@ -19,16 +19,17 @@ export interface ScatterChartOption {
 ### `AxisOption`
 | Props | Type  | Required  | Default | Description |
 | --- | --- | --- | --- | --- |
-| min | number | ✔️ |  | 각 축의 최소값 |
-| max | number | ✔️ |  | 각 축의 최대값 |
-| padding | number |  |  | 각 축의 tick 오프셋 |
+| min | number | ✔️ |  | 축의 최소값 |
+| max | number | ✔️ |  | 축의 최대값 |
+| padding | number |  |  | 축의 tick 오프셋 |
+| strokeColor | string |  |  | 각 축의 색상 |
 | tick | [TickOption](#tickoption) |  |  |  |
 
 
 #### `TickOption`
 | Props | Type  | Required  | Default | Description |
 | --- | --- | --- | --- | --- |
-| count | number |  | 5 | 표시할 각 축의 tick 개수 |
+| count | number |  | 5 | 표시할 축의 tick 개수 |
 | format | `(value: number) => string` |  |  | 표시할 tick의 형태 |
 | color | string |  | `black` | string(hex, rgb, rgba) |
 | strokeColor | string |  | black | string(hex, rgb, rgba) |
@@ -42,6 +43,8 @@ export interface ScatterChartOption {
 | type | string | ✔️ |  | 데이터 타입 (범례에 표현됨) |
 | color | string |  |  | 해당 타입의 데이터 표현에 사용될 색상 |
 | priority | number |  | 99 | 데이터 간 위치가 겹칠 경우 렌더링 우선순위 결정에 사용. 숫자가 낮을 수록 우선순위가 높음 |
+| radius | number |  | 3 | 해당 데이터를 표현할 점의 반지름  |
+| opacity | number |  | 1 | 해당 데이터 색상의 불투명도   |
 
 
 ### `LegendOption`
@@ -54,7 +57,8 @@ export interface ScatterChartOption {
 ### `PointOption`
 | Props | Type  | Required  | Default | Description |
 | --- | --- | --- | --- | --- |
-| radius | number |  | 3 | 데이터를 표현할 원의 반지름 |
+| radius | number |  | 3 | 데이터를 표현할 점의 반지름 |
+| opacity | number |  | 3 | 데이터를 색상의 불투명도 |
 
 
 ### `BackgroundOption`
