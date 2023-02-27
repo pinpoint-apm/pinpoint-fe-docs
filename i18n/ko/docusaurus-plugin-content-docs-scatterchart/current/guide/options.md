@@ -35,6 +35,7 @@ export interface ScatterChartOption {
 | strokeColor | string |  | black | string(hex, rgb, rgba) |
 | width | number |  | 5 | tick의 길이 |
 | font | string |  | default font | 폰트 |
+| padding | typeof [PaddingOption](#paddingoption) |  | { top: 2, bottom: 2, left: 2, right: 2 } | 패딩 |
 
 
 ### `DataOption`

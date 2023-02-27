@@ -65,6 +65,22 @@ SC.on('dragEnd', (event, { x1, y1, x2, y2 }) => {
 })
 ```
 
+### `clickLegend`
+범례 체크박스를 클릭했을 때 발생합니다.
+
+#### Interface
+```typescript
+on('clickLegend', (event: MouseEvent, { checked: string[] }))=> void;
+```
+
+#### Usage
+```typescript
+SC.on('clickLegend', (event, { checked }) => {
+  console.log('checked data types: ', checked);
+  // checked data types: ['success', 'fail']
+})
+```
+
 ## `off`
 
 ### Description
@@ -125,4 +141,19 @@ toBase64Image() => Promise<string>
 ### Usage
 ```typescript
 const imageSrc = SC.toBase64Image();
+```
+
+## `clear`
+
+### Description
+모든 데이터를 삭제합니다.
+
+### Interface
+```typescript
+clear() => void
+```
+
+### Usage
+```typescript
+SC.clear();
 ```

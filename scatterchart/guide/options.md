@@ -35,6 +35,7 @@ export interface ScatterChartOption {
 | strokeColor | string |  | black | string(hex, rgb, rgba) |
 | width | number |  | 5 | width of tick |
 | font | string |  | default font | font of tick |
+| padding | typeof [PaddingOption](#paddingoption) |  | { top: 2, bottom: 2, left: 2, right: 2 } | padding of tick |
 
 
 
