@@ -65,6 +65,22 @@ SC.on('dragEnd', (event, { x1, y1, x2, y2 }) => {
 })
 ```
 
+### `clickLegend`
+Occurs when clicking in the legend area.
+
+#### Interface
+```typescript
+on('clickLegend', (event: MouseEvent, { checked: string[] }))=> void;
+```
+
+#### Usage
+```typescript
+SC.on('clickLegend', (event, { checked }) => {
+  console.log('checked data types: ', checked);
+  // checked data types: ['success', 'fail']
+})
+```
+
 ## `off`
 
 ### Description
@@ -125,4 +141,20 @@ toBase64Image() => Promise<string>
 ### Usage
 ```typescript
 const imageSrc = SC.toBase64Image();
+```
+
+
+## `clear`
+
+### Description
+clear all data
+
+### Interface
+```typescript
+clear() => void
+```
+
+### Usage
+```typescript
+SC.clear();
 ```
