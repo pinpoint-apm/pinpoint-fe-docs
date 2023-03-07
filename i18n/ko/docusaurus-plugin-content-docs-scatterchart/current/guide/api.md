@@ -143,6 +143,37 @@ toBase64Image() => Promise<string>
 const imageSrc = SC.toBase64Image();
 ```
 
+## `startRealtime`
+
+### Description
+reatltime 모드를 시작합니다.
+
+### Interface
+```typescript
+startRealtime(duration: number) => void
+```
+
+### Usage
+```typescript
+SC.startRealtime(to - from);
+SC.startRealtime(60000);
+```
+
+## `stopRealtime`
+
+### Description
+reatltime 모드를 중지합니다.
+
+### Interface
+```typescript
+stopRealtime() => void
+```
+
+### Usage
+```typescript
+SC.stopRealtime();
+```
+
 ## `clear`
 
 ### Description
