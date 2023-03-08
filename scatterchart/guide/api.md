@@ -7,11 +7,11 @@ sidebar_position: 2
 ## `render`
 
 ### Description
-Render data on the chart. You can determine whether to redraw the chart or append data to the exisiting chart with `append` property.
+Render data on the chart. You can determine whether to redraw the chart or append data to the exisiting chart with `append` property. You can also draw data that exceeds the maximum value of y-axis by using the `drawOutOfRange` property. In this case, it will be drawn on the y-axis maximum.
 
 ### Interface
 ```typescript
-render(data: ScatterDataType[], { append = false } = {}) => void;
+render(data: ScatterDataType[], { append = false, drawOutOfRange = false } = {}) => void;
 ```
 #### `ScatterDataType`
 ```typescript
@@ -27,6 +27,7 @@ type ScatterDataType {
 ```typescript
 SC.render(data);
 SC.render(data, { append: true });
+SC.render(data, { drawOutOfRange: true });
 ```
 
 ## `on`
@@ -113,19 +114,32 @@ SC.resize();
 SC.resize(900, 450);
 ```
 
-## `setAxisOption`
+## `setOption`
 
 ### Description
-Reset axis of x, y
+Reset the options.
 
 ### Interface
 ```typescript
-setAxisOption({x?: Partial<AxisOption>, y?: Partial<AxisOption>}) => void;
+setOption({
+  axis?: { 
+    x?: Partial<AxisOption>, 
+    y?: Partial<AxisOption>,
+  },
+  render?: RenderOption
+}) => void;
 ```
 
 ### Usage
 ```typescript
-SC.setAxisOption({x:{ min: Number(min), max: Number(max) }});
+SC.setOption({
+  axis: {
+    x: { min: Number(min), max: Number(max) }
+  },
+  render: {
+    drawOutOfRange: true,
+  }
+});
 ```
 
 ## `toBase64Image`
