@@ -7,11 +7,11 @@ sidebar_position: 2
 ## `render`
 
 ### Description
-데이터를 전달해 차트를 그리는 메서드입니다. 옵션 파라미터의 `append` 프로퍼티를 통해 전체를 다시 그리거나, 기존 차트 위에 그릴 수 있습니다.
+데이터를 전달해 차트를 그리는 메서드입니다. 옵션 파라미터의 `append` 프로퍼티를 통해 전체를 다시 그리거나, 기존 차트 위에 그릴 수 있습니다. `drawOutOfRange` 프로퍼티를 통해 y의 max값을 벗어나는 데이터들도 그릴 수 있습니다. 이 경우엔 y축 max에 그려집니다.
 
 ### Interface
 ```typescript
-render(data: ScatterDataType[], { append = false } = {}) => void;
+render(data: ScatterDataType[], { append = false, drawOutOfRange = false } = {}) => void;
 ```
 #### `ScatterDataType`
 ```typescript
@@ -27,6 +27,7 @@ type ScatterDataType {
 ```typescript
 SC.render(data);
 SC.render(data, { append: true });
+SC.render(data, { drawOutOfRange: true });
 ```
 
 ## `on`
@@ -113,19 +114,32 @@ SC.resize();
 SC.resize(900, 450);
 ```
 
-## `setAxisOption`
+## `setOption`
 
 ### Description
-x, y axis를 재설정합니다.
+옵션을 재 설정합니다.
 
 ### Interface
 ```typescript
-seAxisOption({x?: Partial<AxisOption>, y?: Partial<AxisOption>}) => void;
+setOption({
+  axis?: { 
+    x?: Partial<AxisOption>, 
+    y?: Partial<AxisOption>,
+  },
+  render?: RenderOption
+}) => void;
 ```
 
 ### Usage
 ```typescript
-SC.setAxisOption({x:{ min: Number(min), max: Number(max) }});
+SC.setOption({
+  axis: {
+    x: { min: Number(min), max: Number(max) }
+  },
+  render: {
+    drawOutOfRange: true,
+  }
+});
 ```
 
 ## `toBase64Image`

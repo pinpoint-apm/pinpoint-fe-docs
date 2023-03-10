@@ -90,6 +90,13 @@ export interface ScatterChartOption {
 | strokeColor | string(hex, rgb, rgba) |  | `#469ae4` | Color of drag area storke |
 | backgroundColor | string(hex, rgb, rgba) |  | `rgba(225,225,225,0.4)` | Color of drag area background |
 
+### `RenderOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| append | boolean |  | false |  Add it to the existing data and draw by `render` api |
+| drawOutOfRange | boolean |  | false | Data that exceeds the maximum value of the y-axis is also drawn. This data is drawn on the maximum axis. |
+
+
 ### `PaddingOption`
 | Props | Type  | Required  | Default | Description |
 | --- | --- | --- | --- | --- |

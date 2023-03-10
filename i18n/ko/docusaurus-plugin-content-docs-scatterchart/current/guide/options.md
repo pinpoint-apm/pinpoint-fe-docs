@@ -89,6 +89,12 @@ export interface ScatterChartOption {
 | strokeColor | string(hex, rgb, rgba) |  | `#469ae4` | 드래그 영역 둘레선 색상 |
 | backgroundColor | string(hex, rgb, rgba) |  | `rgba(225,225,225,0.4)` | 드래그 영역의 배경색 |
 
+### `RenderOption`
+| Props | Type  | Required  | Default | Description |
+| --- | --- | --- | --- | --- |
+| append | boolean |  | false | `render` api 호출 시 기존 data에 추가해서 그립니다. |
+| drawOutOfRange | boolean |  | false | axis y의 max값을 벗어나는 데이터도 그립니다. 이 데이터는 max 축에 그려집니다. |
+
 ### `PaddingOption`
 | Props | Type  | Required  | Default | Description |
 | --- | --- | --- | --- | --- |
