@@ -14,6 +14,7 @@ export interface ScatterChartOption {
   legend?: LegendOption;
   padding?: Padding;
   point?: PointOption;
+  render?: RenderOption;
 }
 ```
 ### `AxisOption`

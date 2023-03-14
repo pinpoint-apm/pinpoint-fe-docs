@@ -22,7 +22,7 @@ SC.setOption({
 })
 
 // Start realtime 
-SC.startRealtime(from - to);
+SC.startRealtime(to - from);
 
 // Render whenever you want. such as receiving a response from the server, etc.
 // `append` option must be `true`
