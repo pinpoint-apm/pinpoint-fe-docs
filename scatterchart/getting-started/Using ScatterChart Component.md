@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Using ScatterChart Component
 
 ## Create your first ScatterChart
