@@ -7,6 +7,8 @@ sidebar_position: 1
 ## Create your first ScatterChart
 
 ```typescript title="Create ScatterChart"
+// import default style
+import '@pinpoint-fe/scatter-chart/dist/index.css';
 import { ScatterChart } from '@pinpoint-fe/scatter-chart';
 
 const SC = new ScatterChart(
