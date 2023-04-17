@@ -33,7 +33,7 @@ SC.render(data, { drawOutOfRange: true });
 ## `on`
 
 ### Description
-Bind events and handler. We provide `click` | `dragEnd` events.
+Bind events and handler. We provide `click` | `dragEnd` | `clickLegend` | `resize` events.
 
 ### `click`
 Occurs when clicking in the chart area.
@@ -82,6 +82,21 @@ SC.on('clickLegend', (event, { checked }) => {
 })
 ```
 
+### `resize`
+Occurs when `resize()` method called
+#### Interface
+```typescript
+on('resize', (event: string, { width: number, height: number }))=> void;
+```
+
+#### Usage
+```typescript
+SC.on('resize', (event, { width, height }) => {
+  console.log('resized width: ', width);
+  console.log('resized height: ', height);
+})
+```
+
 ## `off`
 
 ### Description
@@ -96,6 +111,7 @@ off(eventType: string) => void;
 ```typescript
 SC.off('click');
 SC.off('dragEnd');
+SC.off('resize');
 ```
 
 ## `resize`
@@ -140,6 +156,21 @@ SC.setOption({
     drawOutOfRange: true,
   }
 });
+```
+
+## `getOption`
+
+### Description
+Returns the [options](/scatterchart/guide/options).
+
+### Interface
+```typescript
+getOption() => ScatterChartOption;
+```
+
+### Usage
+```typescript
+SC.getOption();
 ```
 
 ## `toBase64Image`
@@ -191,7 +222,7 @@ SC.stopRealtime();
 ## `clear`
 
 ### Description
-clear all data
+Clear all data
 
 ### Interface
 ```typescript
@@ -201,4 +232,19 @@ clear() => void
 ### Usage
 ```typescript
 SC.clear();
+```
+
+## `destroy`
+
+### Description
+Unregisters all events that have been registered and removes the rendered elements.
+
+### Interface
+```typescript
+destroy() => void
+```
+
+### Usage
+```typescript
+SC.destroy();
 ```
