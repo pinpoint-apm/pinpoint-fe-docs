@@ -33,7 +33,7 @@ SC.render(data, { drawOutOfRange: true });
 ## `on`
 
 ### Description
-이벤트 바인딩을 하는 메서드입니다. `click` | `dragEnd` 이벤트를 제공합니다.
+이벤트 바인딩을 하는 메서드입니다. `click` | `dragEnd` | `clickLegend` | `resize` 이벤트를 제공합니다.
 
 ### `click`
 차트 영역에서 클릭했을 때 발생합니다.
@@ -82,6 +82,21 @@ SC.on('clickLegend', (event, { checked }) => {
 })
 ```
 
+### `resize`
+`resize()`가 호출되었을 때 발생합니다.
+#### Interface
+```typescript
+on('resize', (event: string, { width: number, height: number }))=> void;
+```
+
+#### Usage
+```typescript
+SC.on('resize', (event, { width, height }) => {
+  console.log('resized width: ', width);
+  console.log('resized height: ', height);
+})
+```
+
 ## `off`
 
 ### Description
@@ -96,6 +111,7 @@ off(eventType: string) => void;
 ```typescript
 SC.off('click');
 SC.off('dragEnd');
+SC.off('resize');
 ```
 
 ## `resize`
@@ -117,7 +133,7 @@ SC.resize(900, 450);
 ## `setOption`
 
 ### Description
-옵션을 재 설정합니다.
+[옵션](/scatterchart/guide/options)을 재 설정합니다.
 
 ### Interface
 ```typescript
@@ -140,6 +156,21 @@ SC.setOption({
     drawOutOfRange: true,
   }
 });
+```
+
+## `getOption`
+
+### Description
+[옵션](/scatterchart/guide/options)을 반환합니다.
+
+### Interface
+```typescript
+getOption() => ScatterChartOption;
+```
+
+### Usage
+```typescript
+SC.getOption();
 ```
 
 ## `toBase64Image`
@@ -201,4 +232,19 @@ clear() => void
 ### Usage
 ```typescript
 SC.clear();
+```
+
+## `destroy`
+
+### Description
+등록된 모든 이벤트 핸들러들과 렌더링된 엘리먼트들을 제거합니다.
+
+### Interface
+```typescript
+destroy() => void
+```
+
+### Usage
+```typescript
+SC.destroy();
 ```
