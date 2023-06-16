@@ -54,6 +54,7 @@ export interface ScatterChartOption {
 | --- | --- | --- | --- | --- |
 | formatLabel | `(label: string) => string` |  | `data.type` | 범례 라벨 텍스트에 대한 포맷 |
 | formatValue | `(value: number) => string` |  |  | 범례 데이터 count에 대한 포맷 |
+| hidden | boolean |  | false | `true` 일 경우 범례를 숨김  |
 
 
 ### `PointOption`
@@ -82,6 +83,7 @@ export interface ScatterChartOption {
 | color | string(hex, rgb, rgba) |  | `white` | 가이드 텍스트의 색상 |
 | strokeColor | string(hex, rgb, rgba) |  | `black` | 가이드라벨 선의 색상 |
 | backgroundColor | string(hex, rgb, rgba) |  | `black` |  가이드라벨의 배경색 |
+| hidden | boolean |  | `false` | `true` 일 경우 가이드를 숨깁니다. 더불어, `click` 과 `dragEnd` 이벤트는 동작하지 않습니다. |
 | drag | [DragOption](#dragoption) |  |  |  |
 
 #### `DragOption`
