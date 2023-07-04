@@ -248,3 +248,17 @@ destroy() => void
 ```typescript
 SC.destroy();
 ```
+
+## `isRealtime`
+
+### Description
+현재 차트가 realtime 모드인지 아닌지를 나타내는 Boolean 값을 반환하는 Getter입니다.
+
+### Interface
+```typescript
+(getter) ScatterChart.isRealtime: boolean
+```
+
+### Usage
+```typescript
+SC.isRealtime;

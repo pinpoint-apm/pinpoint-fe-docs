@@ -55,6 +55,7 @@ export interface ScatterChartOption {
 | --- | --- | --- | --- | --- |
 | formatLabel | `(label: string) => string` |  | `data.type` | Legend label text format |
 | formatValue | `(value: number) => string` |  |  | Legend data count format |
+| hidden | boolean |  | false | Hide the legend if `true` |
 
 
 ### `PointOption`
@@ -83,6 +84,7 @@ export interface ScatterChartOption {
 | color | string(hex, rgb, rgba) |  | `white` | Color of guide text |
 | strokeColor | string(hex, rgb, rgba) |  | `black` | Color of guide storke |
 | backgroundColor | string(hex, rgb, rgba) |  | `black` |  Color of guide background |
+| hidden | boolean |  | `false` | Hide guide when hidden is `true`. In addition, `click` and `dragEnd` events do not work. |
 | drag | [DragOption](#dragoption) |  |  |  |
 
 #### `DragOption`
