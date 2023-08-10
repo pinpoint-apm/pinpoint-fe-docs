@@ -26,5 +26,7 @@ export default function MyServerMapPage() {
 | onClickNode       | `ClickEventHandler<MergedNode>`    |  | Callback to execute when clicking nodes   |
 | onClickEdge       | `ClickEventHandler<MergedEdge>`    |  | Callback to execute when clicking edges    |
 | onClickBackground | `ClickEventHandler<{}>`             |  | 	Callback to execute when clicking background  |
+| onDataMerged | `(mergeInfo: MergeInfo) => void`             |  | 	Callback to execute when merge logic has been applied  |
 | renderNodeLabel   | `(node: MergedNode) => string ㅣ undefined` |  | Custom node label                                         |
 | renderEdgeLabel   | `(node: MergedEdge) => string ㅣ undefined` |  | Custom edge label                                 |
+| cy   | `(cy: cytoscape.Core) => void` |  | Callback to access Cytoscape cy reference |
