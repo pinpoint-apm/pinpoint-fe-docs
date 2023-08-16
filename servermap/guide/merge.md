@@ -25,3 +25,11 @@ interface MergedEdge extends Edge {
     edges?: Edge[];
 }
 ```
+
+## MergeInfo
+
+```typescript
+interface MergeInfo {
+  types: string[];
+}
+```
